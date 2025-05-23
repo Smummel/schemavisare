@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schema</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="bigbox">
+        <div class="title">
+            <div id="empty1"></div>
+            <div id="tmon">Måndag</div>
+            <div id="ttue">Tisdag</div>
+            <div id="twed">Onsdag</div>
+            <div id="tthu">Torsdag</div>
+            <div id="tfri">Fredag</div>
+            <div id="empty2"></div>
+            
+        </div>
+        <div id="t1">
+            <div class="clock">8:00</div>
+            <div class="clock">9:00</div>
+            <div class="clock">10:00</div>
+            <div class="clock">11:00</div>
+            <div class="clock">12:00</div>
+            <div class="clock">13:00</div>
+            <div class="clock">14:00</div>
+            <div class="clock">15:00</div>
+            <div class="clock">16:00</div>
+        </div>
+        <div id="mon">
+
+        </div>
+        <div id="tue">
+
+        </div>
+        <div id="wed">
+
+        </div>
+        <div id="thu">
+
+        </div>
+        <div id="fri">
+
+        </div>
+        <div id="t2">
+            <div class="clock">8:00</div>
+            <div class="clock">9:00</div>
+            <div class="clock">10:00</div>
+            <div class="clock">11:00</div>
+            <div class="clock">12:00</div>
+            <div class="clock">13:00</div>
+            <div class="clock">14:00</div>
+            <div class="clock">15:00</div>
+            <div class="clock">16:00</div>
+        </div>
+    </div>
+
+    <div id="inputContainer">
+        <input type="text" id="day" placeholder="Dag:">
+        <input type="number" id="begin" placeholder="Starttid:">
+        <input type="number" id="end" placeholder="Sluttid:">
+        <input type="text" id="color" placeholder="Bakgrundsfärg:">
+        <input type="text" id="textColor" placeholder="Textfärg:">
+        <input type="text" id="name" placeholder="Lektion:">
+        <div id="button" onclick="generate()">Generate</div>
+        <div id="remover" onclick="remove()">Remove</div>
+    </div>
+
+</body>
+<script src="script.js"></script>
+</html>

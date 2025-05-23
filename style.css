@@ -1,0 +1,288 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: 1px solid black;
+
+    --font-family: "Comic Sans MS";
+    font-size: 1rem;
+}
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.bigbox{
+    height: 35rem;
+    width: 65rem;
+    outline: 0px solid black;
+
+    display: grid;
+    grid-template-rows: 2rem 1fr;
+    grid-template-columns: 4rem repeat(5, 1fr) 4rem;
+}
+.bigbox *{
+    overflow: hidden;
+    color:;
+}
+#t1{
+    grid-column: 1/2;
+    grid-row: 2/3;
+
+    display: grid;
+    grid-template-rows: repeat(9, 1fr);
+    grid-template-columns: auto;
+}
+#mon{
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+#tue{
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+#wed{
+    grid-column: 4/5;
+    grid-row: 2/3;
+}
+#thu{
+    grid-column: 5/6;
+    grid-row: 2/3;
+}
+#fri{
+    grid-column: 6/7;
+    grid-row: 2/3;
+}
+#t2{
+    grid-column: 7/8;
+    grid-row: 2/3;
+
+    display: grid;
+    grid-template-rows: repeat(9, 1fr);
+    grid-template-columns: auto;
+}
+#mon, #tue, #wed, #thu, #fri{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(108, 1fr);
+    background-color: lightgrey;
+}
+#mon *, #tue *, #wed *, #thu *, #fri *{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.title{
+    grid-row: 1/2;
+    grid-column: 1/8;
+    display: grid;
+    grid-template-columns: 4rem repeat(5, 1fr) 4rem;
+    grid-template-rows: auto;
+}
+.title *{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#t1 *, #t2 *{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* 
+1 unit = 5 min
+
+kl 8:00 = 1
+kl 9:00 = 13
+kl 10:00 = 25
+kl 11:00 = 37
+kl 12:00 = 49
+kl 13:00 = 61
+kl 14:00 = 73
+kl 15:00 = 85
+kl 16:00 = 97
+kl 17:00 = 109
+*/
+
+#mon .lunch{
+    grid-row: 50/54;
+    background-color:coral;
+}
+#mon .fy{
+    grid-row: 1/17;
+    background-color: #00ff40;
+}
+#mon .ma{
+    grid-row: 22/36;
+    background-color: dodgerblue;
+    color: white;
+}
+#mon .wsp1{
+    grid-row: 39/50;
+    background-color: olive;
+    color: white;
+    font-size: .9rem;
+}
+#mon .wsp2{
+    grid-row: 59/81;
+    background-color: olive;
+    color: white;
+    font-size: .9rem;
+}
+#mon .sv{
+    grid-row: 84/95;
+    background-color: blue;
+    color: white;
+}
+#tue .lunch{
+    background-color: coral;
+    grid-row: 47/51;
+}
+#tue .eng{
+    grid-row: 1/17;
+    background-color: #00aa00;
+}
+#tue .ma{
+    grid-row: 21/33;
+    background-color: dodgerblue;
+    color: white;
+}
+#tue .sv{
+    grid-row: 37/47;
+    background-color: blue;
+    color: white;
+}
+#tue .gy{
+    background-color: white;
+    grid-row: 53/65;
+}
+#wed .lunch{
+    background-color: coral;
+    grid-row: 47/51;
+}
+#wed .ma1{
+    grid-row: 1/18;
+    background-color: dodgerblue;
+    color: white;
+}
+#wed .fy{
+    grid-row: 21/36;
+    background-color: #00ff40;
+}
+#wed .ma2{
+    grid-row: 38/47;
+    background-color: dodgerblue;
+    color: white;
+}
+#wed .re{
+    grid-row: 58/76;
+    background-color: #ff80ff;
+}
+#thu .lunch{
+    background-color: coral;
+    grid-row: 56/60;
+}
+#thu .eng{
+    grid-row: 1/18;
+    background-color: #00aa00;
+}
+#thu .prog{
+    grid-row: 21/54;
+    background-color: olive;
+    color: white;
+}
+#thu .sv{
+    grid-row: 62/73;
+    background-color: blue; 
+    color: white;
+}
+#thu .fy{
+    grid-row: 77/93;
+    background-color: #00ff40;
+}
+#fri .lunch{
+    background-color: coral;
+    grid-row: 41/45
+}
+#fri .ma{
+    grid-row: 1/18;
+    background-color: dodgerblue;
+    color: white;
+}
+#fri .wsp1{
+    grid-row: 21/41;
+    background: lime;
+}
+#fri .wsp2{
+    grid-row: 49/64;
+    background-color: lime;
+}
+#fri .kr{
+    grid-row: 71/77;
+    background-color: white;
+}
+
+#inputContainer{
+    outline: 1px solid black;
+    height: 20rem;
+    width: 20rem;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    border-radius: 2rem;
+    padding: 1rem;
+    background-color: lightgrey;
+}
+#inputContainer *{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#button{
+    background-color: orange;
+    color: white;
+    font-weight: bold;
+    caret-color: transparent;
+    cursor: pointer;
+    user-select: none;
+    font-size: 1.75rem;
+    font-family: monospace;
+}
+#button:hover{
+    background-color: rgb(252, 175, 31);
+}
+#button:active{
+    background-color: rgb(255, 181, 45);
+}
+#remover{
+    background-color: red;
+    font-size: 1.75rem;
+    font-weight: bold;
+    color: white;
+    font-family: monospace;
+    cursor: pointer;
+    user-select: none;
+}
+#remover:hover{
+    background-color: rgb(255, 51, 51);
+}
+#remover:active{
+    background-color: rgb(255, 77, 77);
+}
+
+
+/* 
+1 unit = 5 min
+
+kl 8:00 = 1
+kl 9:00 = 13
+kl 10:00 = 25
+kl 11:00 = 37
+kl 12:00 = 49
+kl 13:00 = 61
+kl 14:00 = 73
+kl 15:00 = 85
+kl 16:00 = 97
+kl 17:00 = 109
+*/
